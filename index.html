@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textiles Elarte - Tienda de Textiles</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Barra superior -->
+    <div class="top-bar">
+        <div class="container">
+            <span><i class="fas fa-phone"></i> 74643352-63746150</span>
+            <span><i class="fas fa-envelope"></i> info@textil.es.el.arte.com</span>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- Encabezado -->
+    <header>
+        <div class="container header-main">
+            <div class="logo">
+                <i class="fas fa-palette"></i>
+                <span>Textiles <strong>Elarte</strong>RENOVA</span>
+            </div>
+           
+            <div class="header-icons">
+                <a href="#" class="icon-btn"><i class="far fa-heart"></i><span class="badge">2</span></a>
+                <a href="#carrito" class="icon-btn" id="abrir-carrito">
+    <i class="fas fa-shopping-cart"></i>
+    <span class="badge" id="contador-carrito">0</span>
+</a>
+                <a href="#" class="icon-btn"><i class="far fa-user"></i></a>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <div class="container">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#categorias">Categorías</a></li>
+                    <li><a href="#comentarios">Comentarios</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <span class="hero-subtitle">Nueva Colección 2026</span>
+            <h2>Calidad en Textiles</h2>
+            <p>Los mejores productos de prendas para tu hogar y familia</p>
+            <div class="hero-buttons">
+                <a href="#productos" class="btn btn-primary">Ver Productos</a>
+                <a href="#nosotros" class="btn btn-secondary">Conócenos</a>
+            </div>
+        </div>
+        <div class="hero-features">
+            <div class="feature">
+                <i class="fas fa-shipping-fast"></i>
+                <div>
+                    <strong>Envío Gratis</strong>
+                    <span>En pedidos mayores a 50bs</span>
+                </div>
+            </div>
+            <div class="feature">
+                <i class="fas fa-headset"></i>
+                <div>
+                    <strong>24/7 Soporte</strong>
+                    <span>Atención al cliente</span>
+                </div>
+            </div>
+            <div class="feature">
+                <i class="fas fa-medal"></i>
+                <div>
+                    <strong>Calidad Premium</strong>
+                    <span>100% garantizado</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categorías -->
+    <section id="categorias" class="categorias">
+        <div class="container">
+            <h2 class="section-title">Categorías</h2>
+            <div class="grid-categorias">
+                <div class="categoria">
+                    <img src="bluu.jpg" alt="Ropa">
+                    <div class="categoria-overlay">
+                        <h3>Ropa</h3>
+                        <p>Poleras y más</p>
+                    </div>
+                </div>
+                <div class="categoria">
+                    <img src="accesorio.jpg" alt="Accesorios">
+                    <div class="categoria-overlay">
+                        <h3>Accesorios</h3>
+                        <p>falda y más</p>
+                    </div>
+                </div>
+                <div class="categoria">
+                    <img src="bolso.jpg" alt="Bolsos">
+                    <div class="categoria-overlay">
+                        <h3>Bolsos</h3>
+                        <p>Carteras</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Productos -->
+    <section id="productos" class="productos">
+        <div class="container">
+            <h2 class="section-title">Productos Destacados</h2>
+            <div class="product-tabs">
+                <button class="tab-btn active" data-filter="all">Todos</button>
+                <button class="tab-btn" data-filter="ropa">Ropa</button>
+                <button class="tab-btn" data-filter="accesorios">Accesorios</button>
+                <button class="tab-btn" data-filter="bolsos">Bolsos</button>
+            </div>
+            <div class="grid-productos">
+                <!-- Producto 1 -->
+                <div class="producto">
+                    <div class="producto-badge">Nuevo</div>
+                    <div class="producto-img">
+                        <img src="algodon.jpg" alt="Polo de algodón">
+                        <div class="producto-actions">
+                            <button><i class="far fa-heart"></i></button>
+                            <button><i class="fas fa-search"></i></button>
+                            <button><i class="fas fa-random"></i></button>
+                        </div>
+                    </div>
+                    <h3>Polo </h3>
+                    <p class="descripcion">Polo de algodón 100% natural</p>
+                    <div class="producto-footer">
+                        <p class="precio">35bs</p>
+                        <button class="btn-producto"><i class="fas fa-cart-plus"></i> Agregar</button>
+                    </div>
+                </div>
+                <!-- Producto 2 -->
+                <div class="producto">
+                    <div class="producto-badge oferta">Oferta</div>
+                    <div class="producto-img">
+                        <img src="blusas.jpg" alt="Cinturón de tela">
+                        <div class="producto-actions">
+                            <button><i class="far fa-heart"></i></button>
+                            <button><i class="fas fa-search"></i></button>
+                            <button><i class="fas fa-random"></i></button>
+                        </div>
+                    </div>
+                    <h3>Blusa de Tela</h3>
+                    <p class="descripcion">Blusa resistente y duradero</p>
+                    <div class="producto-footer">
+                        <p class="precio">25bs</p>
+                        <button class="btn-producto"><i class="fas fa-cart-plus"></i> Agregar</button>
+                    </div>
+                </div>
+                <!-- Producto 3 -->
+                <div class="producto">
+                    <div class="producto-img">
+                        <img src="carteras.jpg" alt="Cartera de tela">
+                        <div class="producto-actions">
+                            <button><i class="far fa-heart"></i></button>
+                            <button><i class="fas fa-search"></i></button>
+                            <button><i class="fas fa-random"></i></button>
+                        </div>
+                    </div>
+                    <h3>Cartera </h3>
+                    <p class="descripcion">Cartera hecha a mano</p>
+                    <div class="producto-footer">
+                        <p class="precio">40bs</p>
+                        <button class="btn-producto"><i class="fas fa-cart-plus"></i> Agregar</button>
+                    </div>
+                </div>
+                <!-- Producto 4 -->
+                <div class="producto">
+                    <div class="producto-badge">Popular</div>
+                    <div class="producto-img">
+                        <img src="poleras.jpg" alt="Polo variant">
+                        <div class="producto-actions">
+                            <button><i class="far fa-heart"></i></button>
+                            <button><i class="fas fa-search"></i></button>
+                            <button><i class="fas fa-random"></i></button>
+                        </div>
+                    </div>
+                    <h3>Polera</h3>
+                    <p class="descripcion">Polera de calidad</p>
+                    <div class="producto-footer">
+                        <p class="precio">50bs</p>
+                        <button class="btn-producto"><i class="fas fa-cart-plus"></i> Agregar</button>
+                    </div>
+                </div>
+                <!-- Producto 5 -->
+                <div class="producto">
+                    <div class="producto-img">
+                        <img src="vesti.jpg" alt="Vestido variant">
+                        <div class="producto-actions">
+                            <button><i class="far fa-heart"></i></button>
+                            <button><i class="fas fa-search"></i></button>
+                            <button><i class="fas fa-random"></i></button>
+                        </div>
+                    </div>
+                    <h3>Vestido Elegante</h3>
+                    <p class="descripcion">Perfecto para ocasiones especiales</p>
+                    <div class="producto-footer">
+                        <p class="precio">60bs</p>
+                        <button class="btn-producto"><i class="fas fa-cart-plus"></i> Agregar</button>
+                    </div>
+                </div>
+                <!-- Producto 6 -->
+                <div class="producto">
+                    <div class="producto-badge oferta">-20%</div>
+                    <div class="producto-img">
+                        <img src="falda.jpg" alt="Falda variant">
+                        <div class="producto-actions">
+                            <button><i class="far fa-heart"></i></button>
+                            <button><i class="fas fa-search"></i></button>
+                            <button><i class="fas fa-random"></i></button>
+                        </div>
+                    </div>
+                    <h3>falda </h3>
+                    <p class="descripcion">Estilo retro único</p>
+                    <div class="producto-footer">
+                        <p class="precio">70bs</p>
+                        <button class="btn-producto"><i class="fas fa-cart-plus"></i> Agregar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Por qué elegirnos -->
+    <section class="why-us">
+        <div class="container">
+            <div class="why-us-grid">
+                <div class="why-us-item">
+                    <div class="why-us-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Materiales Sostenibles</h3>
+                </div>
+                <div class="why-us-item">
+                    <div class="why-us-icon">
+                        <i class="fas fa-hands"></i>
+                    </div>
+                    <h3>Trabajo Artesanal</h3>
+                    <p>Cada producto es elaborado a mano por emprendedores</p>
+                </div>
+                <div class="why-us-item">
+                    <div class="why-us-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Garantía de Calidad</h3>
+                    <p>100% satisfacción asegurada en todos nuestros productos</p>
+                </div>
+                <div class="why-us-item">
+                    <div class="why-us-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Entrega Rápida</h3>
+                    <p>Envíos a todos los departamentos en menos de 48 horas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Novedades -->
+    <section id="novedades" class="novedades">
+        <div class="container">
+            <div class="newsletter">
+                <div class="newsletter-content">
+                    <i class="fas fa-envelope-open-text"></i>
+                    <h2>Suscríbete a Nuestras Novedades</h2>
+                    <p>Recibe ofertas exclusivas y las últimas tendencias en textiles</p>
+                </div>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Tu correo electrónico">
+                    <button type="submit">Suscribirse</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="testimonios">
+        <div class="container">
+            <h2 class="section-title">Qué dicen nuestros clientes</h2>
+            <div class="grid-testimonios">
+                <div class="testimonio">
+                    <div class="testimonio-img">
+                        <img src="img/polo.jpg" alt="Cliente">
+                    </div>
+                    <p class="testimonio-text">"Excelente calidad de remodelaciòn, muy cómodos y duraderos. Recomendados al 100%"</p>
+                    <h4>Julieta Puma </h4>
+                    <div class="testimonio-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="testimonio">
+                    <div class="testimonio-img">
+                        <img src="img/cartera.jpg" alt="Cliente">
+                    </div>
+                    <p class="testimonio-text">"Las carteras son hermosas, trabajo creativo de calidad"</p>
+                    <h4>Victoria Tarifa</h4>
+                    <div class="testimonio-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <div class="testimonio">
+                    <div class="testimonio-img">
+                        <img src="img/cinturon.jpg" alt="Cliente">
+                    </div>
+                    <p class="testimonio-text">"El mejor lugar para comprar prendas, atención personalizada y precios justos"</p>
+                    <h4>Edwim Vladimir Chumacero</h4>
+                    <div class="testimonio-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nosotros -->
+    <section id="nosotros" class="nosotros">
+        <div class="container">
+            <div class="nosotros-grid">
+                <div class="nosotros-img">
+                    <img src="img/polo.jpg" alt="Nuestra tienda">
+                </div>
+                <div class="nosotros-content">
+                    <h2 class="section-title" style="text-align: left;">Sobre Nosotros</h2>
+                    <p>Somos un enprendimiento dedicados a la venta de productos textiles de calidad desde años atras. Ofrecemos variedad en ropa, accesorios y artículos para el hogar.</p>
+                    <ul class="nosotros-features">
+                        <li><i class="fas fa-check"></i> Productos 100% creativas </li>
+                        <li><i class="fas fa-check"></i> Atención personalizada</li>
+                        <li><i class="fas fa-check"></i> Envíos a todos los departamnetos</li>
+                    </ul>
+                    <a href="#contacto" class="btn btn-primary">Contáctanos·""</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contacto">
+        <div class="container">
+            <h2 class="section-title">Contáctanos</h2>
+            <div class="contacto-grid">
+                <div class="contacto-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Dirección</h3>
+                    <p>Barrio 20 de Junio-D-5</p>
+                </div>
+                <div class="contacto-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <h3>Teléfono</h3>
+                    <p>74643352-63746150</p>
+                </div>
+                <div class="contacto-item">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>info@textileselarte.com</p>
+                </div>
+                <div class="contacto-item">
+                    <i class="fas fa-clock"></i>
+                    <h3>Horario</h3>
+                    <p>Lun-Sáb: 9am - 8pm</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo">
+                        <i class="fas fa-palette"></i>
+                        <span>Textiles <strong>Elarte</strong></span>
+                    </div>
+                    <p>Calidad y estilo en cada puntada. Tu tienda de confianza para productos textiles.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#productos">Productos</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Categorías</h4>
+                    <ul>
+                        <li><a href="#">Ropa</a></li>
+                        <li><a href="#">Accesorios</a></li>
+                        <li><a href="#">Bolsos</a></li>
+                        <li><a href="#">Hogar</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Horario de Atención</h4>
+                    <p>Lunes - Viernes: 8:00 AM - 7:00 PM</p>
+                    <p>Sabado: 9:00 AM - 5:00 PM</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Textiles Elarte. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textiles Elarte - Tienda de Textiles</title>
+     
+</head>
+<body>
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+    const corazones = document.querySelectorAll(
+        '.producto-actions button i.fa-heart'
+    );
+
+    corazones.forEach(function (corazon) {
+        corazon.parentElement.addEventListener("click", function () {
+            corazon.classList.toggle("far");
+            corazon.classList.toggle("fas");
+
+            corazon.style.color =
+                corazon.classList.contains("fas") ? "red" : "";
+        });
+    });
+});
+</script>
+<!-- SECCIÓN DEL CARRITO -->
+<section id="carrito" style="padding: 40px 20px; max-width: 900px; margin: auto;">
+    <h2>Mi carrito de compras</h2>
+
+    <div id="lista-carrito">
+        <p>Tu carrito está vacío.</p>
+    </div>
+
+    <h3>Total: Bs. <span id="total-carrito">0.00</span></h3>
+
+    <button type="button" onclick="vaciarCarrito()">
+        Vaciar carrito
+    </button>
+
+    <button type="button" onclick="realizarPedido(59174643352)">
+        Realizar pedido por WhatsApp
+    </button>
+</section>
+
+<script>window.open(
+    "https://wa.me/" + numeroWhatsApp + "?text=" + mensaje,
+    "_blank"
+);</script>
+<script>
+```javascript
+function realizarPedido() {
+    if (carrito.length === 0) {
+        alert("Tu carrito está vacío. Agrega un producto antes de realizar el pedido.");
+        return;
+    }
+
+    let mensaje = "¡Hola! 👋 Soy un cliente de Renova.%0A";
+    mensaje += "Quiero realizar el siguiente pedido:%0A%0A";
+
+    let total = 0;
+
+    carrito.forEach(function(producto) {
+        let subtotal = producto.precio * producto.cantidad;
+        total += subtotal;
+
+        mensaje += "Producto: " + encodeURIComponent(producto.nombre) + "%0A";
+        mensaje += "Cantidad: " + producto.cantidad + "%0A";
+        mensaje += "Precio: Bs. " + producto.precio.toFixed(2) + "%0A";
+        mensaje += "Subtotal: Bs. " + subtotal.toFixed(2) + "%0A%0A";
+    });
+
+    mensaje += "TOTAL DEL PEDIDO: Bs. " + total.toFixed(2);
+    mensaje += "%0A%0AQuisiera conocer la disponibilidad y coordinar la entrega. ¡Gracias!";
+
+    const numeroWhatsApp = "59174643352";
+
+    const enlace = "https://wa.me/" + numeroWhatsApp + "?text=" + mensaje;
+
+    window.open(enlace, "_blank");
+}
+```
+</script>
